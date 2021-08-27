@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/text.css">
+    <link rel="stylesheet" href="./css/admin.css">
+
+</head>
+<body>
+    <div class="layer">
+
+<!-- Sidebar -->
+    <div class="page-flex">
+    <aside class="sidebar" >
+        <div class="sidebar-start">
+            <div class="sidebar-head">
+              <a href="/" class="logo-wrapper" title="Home">
+                <div class="logo-text">
+                    <span class="logo-title">Admin</span>
+                </div>
+    
+            </a>
+                <button class="sidebar-toggle transparent-btn buton" title="Menu" type="button">
+                    <span class="sr-only">Toggle menu</span>
+                    <span class="icon menu-toggle" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="sidebar-body">
+                <ul class="sidebar-body-menu">
+                    <li>
+                        <a class="active" href="/"><span class="icon home" aria-hidden="true"></span>Dashboard</a>
+                    </li>
+                    <li>
+                        <a class="show-cat-btn" href="##">
+                            <span class="icon message" aria-hidden="true"></span>Mails
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a class="show-cat-btn" href="##">
+                            <span class="icon shopping-cart" aria-hidden="true"></span>Add Products
+                        </a>
+                    </li>
+                </ul>
+                
+                <ul class="sidebar-body-menu">
+                    <li>
+                        <a class="show-cat-btn" href="##">
+                            <span class="icon user-3" aria-hidden="true"></span>Profile
+                        </a>
+                        <ul class="cat-sub-menu">    
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="sidebar-footer">
+            <a href="##" class="sidebar-user">
+                <span class="sidebar-user-img">
+                    <picture><source srcset="./img/avatar/avatar-face-02.webp" type="image/webp"><img src="./img/avatar/avatar-face-02.png" alt="User name"></picture>
+                </span>
+                <div class="sidebar-user-info">
+                    <span class="sidebar-user__title">Admin</span>
+                    <span class="sidebar-user__subtitle">Owner</span>
+                </div>
+            </a>
+        </div>
+    </aside>
+    <div class="main-wrapper">
+        <!-- Mian nav bar -->
+    <nav class="main-nav--bg">
+        <div class="container main-nav">
+          <div class="main-nav-start">
+            <div class="search-wrapper">
+              <i data-feather="search" aria-hidden="true"></i>
+              <input type="text" placeholder="Search" required>
+            </div>
+          </div>
+          <div class="main-nav-end">
+            <button class="sidebar-toggle transparent-btn buton" title="Menu" type="button">
+              <span class="sr-only">Toggle menu</span>
+              <span class="icon menu-toggle--gray" aria-hidden="true"></span>
+            </button>
+            <div class="lang-switcher-wrapper">
+              <button class="lang-switcher transparent-btn buton" type="button">
+                EN
+                <i data-feather="chevron-down" aria-hidden="true"></i>
+              </button>
+              <ul class="lang-menu dropdown">
+                <li><a href="##">English</a></li>
+                <li><a href="##">French</a></li>
+                <li><a href="##">Uzbek</a></li>
+              </ul>
+            </div>
+            <button class="theme-switcher gray-circle-btn buton" type="button" title="Switch theme">
+              <span class="sr-only">Switch theme</span>
+              <i class="sun-icon" data-feather="sun" aria-hidden="true"></i>
+              <i class="moon-icon" data-feather="moon" aria-hidden="true"></i>
+            </button>
+            <div class="notification-wrapper">
+              <button class="gray-circle-btn dropdown-btn buton" title="To messages" type="button">
+                <span class="sr-only">To messages</span>
+                <span class="icon notification active" aria-hidden="true"></span>
+              </button>
+              <ul class="users-item-dropdown notification-dropdown dropdown">
+                <li>
+                  <a href="##">
+                    <div class="notification-dropdown-icon info">
+                      <i data-feather="check"></i>
+                    </div>
+                    <div class="notification-dropdown-text">
+                      <span class="notification-dropdown__title">System just updated</span>
+                      <span class="notification-dropdown__subtitle">The system has been successfully upgraded. Read more
+                        here.</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="##">
+                    <div class="notification-dropdown-icon danger">
+                      <i data-feather="info" aria-hidden="true"></i>
+                    </div>
+                    <div class="notification-dropdown-text">
+                      <span class="notification-dropdown__title">The cache is full!</span>
+                      <span class="notification-dropdown__subtitle">Unnecessary caches take up a lot of memory space and
+                        interfere ...</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="##">
+                    <div class="notification-dropdown-icon info">
+                      <i data-feather="check" aria-hidden="true"></i>
+                    </div>
+                    <div class="notification-dropdown-text">
+                      <span class="notification-dropdown__title">New Subscriber here!</span>
+                      <span class="notification-dropdown__subtitle">A new subscriber has subscribed.</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="link-to-page" href="##">Go to Notifications page</a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav-user-wrapper">
+              <button href="##" class="nav-user-btn dropdown-btn buton" title="My profile" type="button">
+                <span class="sr-only">My profile</span>
+                <span class="nav-user-img">
+                  <picture><source srcset="./img/avatar/avatar-face-02.png" type="image/webp"><img src="./img/avatar/avatar-face-02.png" alt="User name"></picture>
+                </span>
+              </button>
+              <ul class="users-item-dropdown nav-user-dropdown dropdown">
+                <li><a href="##">
+                    <i data-feather="user" aria-hidden="true"></i>
+                    <span>Profile</span>
+                  </a></li>
+                <li><a href="##">
+                    <i data-feather="settings" aria-hidden="true"></i>
+                    <span>Account settings</span>
+                  </a></li>
+                <li><a class="danger" href="##">
+                    <i data-feather="log-out" aria-hidden="true"></i>
+                    <span>Log out</span>
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+    <!-- Add Product -->
+  <section>
+    <div >
+     <form type="file"  class="gallery">
+      <input type="file" >
+      <span class="icon image upload" aria-hidden="true"></span>
+      <button type="submit"class="upload bt">Upload cover image</button>
+     </form>
+    </div>
+  </section>
+
+<!-- product name -->
+<section class="pr">
+<div class="form-outline ">
+<input type="text" class="form-control abc" name="name" id="name" placeholder="Product Name...">
+</div>
+<span class="dollar">$<input type="text" name="currency" placeholder="0.00"><p>Price</p></span>
+<span class="currencyinput">$<input type="text" name="currency" placeholder="0.00"><p>Distcount Price</p></span>
+
+<div class="form-outline">
+  <textarea name="" id="" cols="30" rows="1" class="cb" placeholder="Ingredients Used..."></textarea>
+</div>
+
+
+<div class="form-outline ab">
+  <p class="para">How many member can eat</p>
+  <div class="flex">
+    <ul class="pagination"> 
+      <li class="xyz">1</li>
+      <li class="xyz">2</li>
+      <li class="xyz">3</li>
+      <li class="xyz">4</li>
+      <li class="xyz">5</li>
+      <li class="xyz">6</li>
+      <div class="bar"></div>
+    </ul>
+  </div>
+</div>
+</section>
+
+<section class="crane">
+
+  <div class="tick1">
+    <h5>SELECT A CATEGORY</h5><br>
+    <form action="#" class="f1">
+      <input type="checkbox" id="category1"  class="chk"name="category1" value="Hot">
+      <label for="category1">Hot</label><br>
+      <input type="checkbox" id="category2" name="category2" value="Sweet">
+      <label for="category2">Sweet</label><br>
+      <input type="checkbox" id="category3" name="category3" value="Spicy">
+      <label for="category3">Spicy</label><br>
+      <input type="checkbox" id="category4" name="category4" value="Medium">
+      <label for="category4">Medium</label><br>
+    </form>
+  </div>
+  <br>
+  <div class="tick2">
+    <h5>SELECT A DISH</h5><br>
+    <form action="#" class="f2">
+      <input type="checkbox" id="dish1" name="dish1" value="Maharashtrian">
+      <label for="dish1">Maharashtrian</label><br>
+      <input type="checkbox" id="category2" name="dish2" value="South-Indian">
+      <label for="dish2">South Indian</label><br>
+      <input type="checkbox" id="category3" name="dish3" value="North-Indian">
+      <label for="dish3">North-Indian</label><br>
+      <input type="checkbox" id="category4" name="dish4" value="Rajashtani">
+      <label for="dish4">Rajasthani</label><br>
+    </form>
+  </div>
+  <br>
+  <div class="tick3">
+    <h5>SELECT A TYPE</h5><br>
+    <form action="#" class="f3">
+      <input type="checkbox" id="type1" name="category1" value="Veg">
+      <label for="type1">Veg</label><br>
+      <input type="checkbox" id="category2" name="type2" value="Sweet">
+      <label for="type2"> Non-Veg</label><br>
+    </form>
+  </div>
+</section>
+
+<textarea name="" id="" cols="30" rows="2" class="bca" placeholder="Short description..."></textarea>
+
+<button type="submit" class="createproduct">Create Product</button>
+</div>
+
+<!-- Chart library -->
+<script src="./plugins/chart.min.js"></script>
+<!-- Icons library -->
+<script src="plugins/feather.min.js"></script>
+<!-- Custom scripts -->
+<script src="js/script.js"></script> 
+<!-- Add Product -->
+<script src="js/product.js"></script> 
+<script src="./plugins/bootstrap.min.js"></script>
+<script src="./plugins/jquery.validate.min.js"></script>
+<script src="./plugins/jquery-3.3.1.min.js"></script>
+<script src="./plugins/owl.carousel.min.js"></script>
+<script src="./plugins/popper.min.js"></script>
+<script src="./js/pagination.js"></script>
+<script src="./js/drop.js"></script>
+</body>
+</html>

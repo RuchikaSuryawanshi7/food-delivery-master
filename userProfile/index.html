@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>User Profile</title>
+    <style>
+        *{
+            margin : 0;
+            padding : 0;
+            box-sizing: border-box;
+        }
+        #first-section{
+            position: relative;
+            height: 20vw;
+            background: url('./background.jpg') no-repeat center center/cover;
+            background-size: 100%;
+        }
+        .profile-img>img{
+            border-radius: 50%;
+            border: 3px solid white;
+            height: 10vw;
+            width: 10vw;
+            position : absolute;
+            left : 5vw;
+            top : 5vw;
+        }
+        #name,#icon,#place-name,#reviews,#photos,#followers{
+            position : absolute;
+            color : white;
+        }
+        #name{
+            top : 6vw;
+            left : 16vw;
+        }
+        #name>span{
+            font-size: 2vw;
+        }
+        #icon{
+            top : 9vw;
+            left : 16vw;
+            
+        }
+        #icon>i{
+            color : black;
+            font-size: 1.6vw;
+            color : white;
+        }
+        #place-name{
+            top : 8.7vw;
+            left : 17.5vw;
+        }
+        #place-name>span{
+            font-size: 1.1vw;
+        }
+        #reviews{
+            top : 12vw;
+            left : 14vw;
+            text-align: center;
+        }
+        #reviews>span{
+            font-size: 1.1vw;
+        }
+        #photos{
+            top : 12vw;
+            left : 19vw;
+            text-align: center;
+        }
+        #photos>span{
+            font-size: 1.1vw;
+        }
+        #followers{
+            top : 12vw;
+            left : 23.3vw;
+            text-align: center;
+        }
+        #followers>span{
+            font-size: 1.1vw;
+        }
+        .line-img-1,.line-img-2{
+            position: absolute;
+            top : 5vw;
+            right : 5vw;
+        }
+        .line-img-1{
+            top : 12vw;
+            left : 18.3vw;
+        }
+        .line-img-2{
+            top : 12vw;
+            left : 22.8vw;
+        }
+        .line-img-1>img,.line-img-2>img{
+            height : 3vw;
+            filter: invert(100);
+        }
+        #section-2{
+            display: flex;
+        }
+        #btn{
+            position: absolute;
+            top : 17vw;
+            left : 28vw;
+            background-color : rgba(233, 51, 51, 0.705);
+            padding : 0.4vw 1vw;
+            border-radius: 20%;
+            color : white;
+            border : none;
+        }
+        #left-bar{
+            margin-left : 3vw;
+            width: 15vw;
+            padding-top: 1vw;
+            background-color: rgba(211, 211, 211, 0.459);
+            height: 100%;
+            padding-bottom: 6vw;
+            padding-left: 1.5vw;
+        }
+        #left-bar>ul{
+            list-style-type: none;
+        }
+        .title>span{
+            font-size: 0.8vw;
+        }
+        .left-list>li>a{
+            font-size: 0.8vw;
+            color : black;
+        }
+        .left-list>li>a:hover{
+            font-size: 0.8vw;
+            background-color: rgba(200, 18, 18, 0.582);
+            padding : 0;
+            padding-right: 6vw;
+        }
+        #right-bar{
+            position: relative;
+        }
+        
+        #right-bar>h2{
+            margin-top : 2vw;
+            margin-left : 2vw;
+        }
+        #right-bar{
+            position: relative;
+        }
+        .right-image{
+            position: absolute;
+            top : 10vw;
+            left : 30vw;
+        }
+        .right-image>img{
+            height: 10vw;
+            width: 10vw;
+        }
+        .container-fluid{
+            margin-bottom: 3vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light  bg-light fixed-top">
+          <a class="navbar-brand" href="#"><div><img src="Vector.svg" alt="loog" class="img-fluid ml-5"></div></i></a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+          </a>
+        
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mx-auto  justify-content-center ">
+             <li class="topnav">
+                <div class="search-container">
+                  <form class=" m-xl-0"> 
+                     <input type="search" class="p-2 ml-2" placeholder="search food" name="search">  
+                  </form>
+                 </div>
+                </li>
+          <li class="nav-item float-left"><a class="navbar-brand ml-3" href="#"><i class="fa fa-map-marker mr-2" aria-hidden="true"></i>location</a>
+          </li>
+          <li class="nav-item"><a class="navbar-brand ml-3" href="#"><i class="fa fa-filter mr-2" aria-hidden="true"></i>filters</a>
+          </li>
+          <li class="nav-item"> <a class="navbar-brand  ml-3" href="#"><i class="fa fa-user mr-2" aria-hidden="true"></i>about us</a>
+          </li>
+        </ul>
+    
+        <ul class="nav justify-content-start navbar">
+          <li class="nav-item"><a class="nav-link mr-4 text-dark" href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-item"><a class="nav-link mr-4 text-dark" href="#"><i class="fa fa-book" aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-item"><a class="nav-link mr-4 text-dark" href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+          </li>
+       </ul>
+      </div>
+    </nav>
+    </div>
+    <section id="first-section">
+        <div>
+            <div class="profile-img">
+            <img src="./profile.jpg" alt="profile-pic">
+        </div>
+        <div id="name">
+            <span>Max Waddia</span>
+        </div>
+        <div id="icon">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+        </div>
+    <div id="place-name">
+        <span>
+            Akola
+        </span>
+    </div>
+        <div id="reviews"><span>0</span><br><span>Reviews</span></div>
+        <div class="line-img-1"><img src="./Straight_line.jpg" alt=""></div>
+        <div id="photos"><span>0</span><br><span>Photos</span></div>
+        <div class="line-img-2"><img src="./Straight_line.jpg" alt=""></div>
+        <div id="followers"><span>0</span><br><span>Followers</span></div>
+        <button id="btn"><i class="fa fa-pencil-square"></i> Edit Profile</button>
+        </div>
+    </section>
+    <div id="section-2">
+        <div id="left-bar">
+            <div class="title"><span>ACTIVITY</span></div>
+            <ul class="left-list">
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">Followers</a></li>
+                <li><a href="#">Recently Viewed</a></li>
+                <li><a href="#">Bookmarks</a></li>
+                <li><a href="#">Blog Posts</a></li>
+            </ul>
+            <div class="title"><span>ONLINE ORDERING</span></div>
+            <ul class="left-list">
+                <li><a href="#">Order History</a></li>
+                <li><a href="#">My addresses</a></li>
+                <li><a href="#">Favorite Orders</a></li>
+            </ul>
+            <div class="title"><span>PAYMENTS</span></div>
+            <ul class="left-list">
+                <li><a href="#">Manage Wallets</a></li>
+                <li><a href="#">Manage Cards</a></li>
+            </ul>
+        </div>
+        <div id="right-bar">
+            <h2><span>Reviews</span></h2>
+            <div class="right-image">
+                <img src="./nothingHere.JPG" alt="">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Edit Profile</title>
+</head>
+<body>
+    <span class="close">&times;</span>
+
+    <div class="contact-us">
+         <b><h5>Edit Profile</h5></b>
+        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="account-settings">
+                        <div class="user-profile">
+                            <div class="user-avatar">
+                                <img src="./img/avatar-face-02.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        <form action="#">
+          <label for="customerName">
+            Full Name 
+            <em>&#x2a;</em>
+          </label><input id="customerName" name="customerName" required="" type="text" />
+          <label for="customerEmail">
+            Handle 
+          </label><input id="customerEmail" name="customerEmail" required="" type="email" />
+          <h6>You can only change your handle once<em>&#x2a;</em></h6>
+          <br><br>
+    
+          <label for="customerPhone">Phone</label>
+          <input id="customerPhone" name="customerPhone" pattern="[0-7]{1}-[0-7]{1}-[0-7]{2}" type="tel" />
+          <label for="Website">Website</label>
+          <input id="Website" name="Website" type="text" />
+          <label for="customerNote">
+            Description 
+          </label>
+          <textarea id="customerNote" name="customerNote" required="" rows="1">
+      </textarea> <br><br>
+      <h6>Tell us about youself (150 characters remaining)</h6><br><br>
+          <button id="customerOrder">Update
+          </button>
+          <button id="customerOrder">Cancle
+        </button>
+        </form>
+      </div>
+</body>
+</html>

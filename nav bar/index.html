@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>    
+<head>
+<!-- Required meta tags -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="filters.css">
+
+<style>
+.justify-content-end{
+	margin-right: 90px;
+}
+.logo{
+	margin-left:100px;
+}
+.topnav .search-container input{
+	border-radius: 30px;
+	border:none;
+	margin-left: 20px;
+	/* background-color: ; */
+}
+.search-container form input[type="search"] {
+outline: none;
+}
+</style>    
+<title>navbar</title>
+</head>  
+<body>
+  <section>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light  bg-secondary fixed-top">
+      <a class="navbar-brand" href="#"><div><img src="Vector.svg" alt="loog" class="img-fluid ml-5"></div></i></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+      </a>
+    </nav>
+  
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto mx-auto  justify-content-center ">
+         <li class="topnav">
+            <div class="search-container">
+              <form class=" m-xl-0"> 
+                 <input type="search" class="p-2 ml-2" placeholder="fide food search" name="search">  
+              </form>
+             </div>
+            </li>
+      <li class="nav-item float-left"><a class="navbar-brand ml-3 text-white" href="#"><i class="fa fa-map-marker mr-2 text-white" aria-hidden="true"></i>location</a>
+      </li>
+      <li class="nav-item"><button onclick="fl()" id="toggle-btn" class="mx-3 my-auto">filters</button>
+      </li>
+      <li class="nav-item"> <a class="navbar-brand  ml-3  text-white" href="#">about us</a>
+      </li>
+    </ul>
+
+    <ul class="nav justify-content-start navbar">
+      <li class="nav-item"><a class="nav-link mr-4 text-white" href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+      </li>
+      <li class="nav-item"><a class="nav-link mr-4 text-white" href="#"><i class="fa fa-book" aria-hidden="true"></i></a>
+      </li>
+      <li class="nav-item"><a class="nav-link mr-4 text-white" href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+      </li>
+   </ul>
+  </div>
+</nav>
+<<<<<<< HEAD
+<script>
+  var x=1;
+  function fl(){
+    x++;
+    if(x%2==0){
+      document.getElementById("fl").style.display="block";
+    }
+    else{
+      document.getElementById("fl").style.display="none";
+    }
+  }
+</script>
+</div>
+<section class="filter-main" id="fl">
+  <div class="filter">
+      <div class="filter-content">
+         <div class="filter1 f-content">
+             <h1>Filters</h1>
+             <i class="fa fa-times-circle-o fa-2x" onclick="fl()"></i>
+         </div>
+         <div class="filter2 f-content"onclick="filter(0)">
+             <span class="filtering" id="filter-btn-0" >Sort by<p id="sort-feilds"></p></span >        
+         </div>
+         <div class="filter3 f-content">
+             <form action="filters.html">
+                 <div class="form-content">
+                     <div id="filtering-0">
+                             <div>
+                             <input type="radio" name="sort-by" value="Popularity" id="Popularity" onclick="checkvalue()" checked>
+                             <label for="Popularity" >Popularity</label>
+                             </div>
+                             <div><input type="radio" name="sort-by" value="Rating High to Low" id="RatingHightoLow" onclick="checkvalue()" >
+                             <label for="RatingHightoLow">Rating High to Low</label></div>
+                             <div><input type="radio" name="sort-by"  value="Delivery-time" id="Deliverytime" onclick="checkvalue()">
+                             <label for="Deliverytime">Delivery time</label></div>
+                             <div><input type="radio" name="sort-by" value="Cost-Low-to-High" id="CostLowtoHigh" onclick="checkvalue()">
+                             <label for="CostLowtoHigh">Cost Low to High</label></div>
+                             <div><input type="radio" name="sort-by"  value="Cost-High-to-Low" id="CostHightoLow" onclick="checkvalue()" >
+                             <label for="CostHightoLow">Cost High to Low</label></div>
+                             </div>
+
+                             <div id="filtering-1">
+                             <input type="search" name="search" id="search"  class="icon" placeholder=" &#xf002; &nbsp; Search here">
+
+                 
+                             <div class="cuisine-content">
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div> 
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div>
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div> 
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div>
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div> 
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div>
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div> 
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div>
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div> 
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div>
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div> 
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div>
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div> 
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div>
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div> 
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div>
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div> 
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div>
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div> 
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div>
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div> 
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div>
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div> 
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div>                                
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div> 
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div>
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div> 
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div>
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div> 
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div>
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div> 
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div>
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div> 
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div>
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div> 
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div>
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div> 
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div>
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div> 
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div>
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div> 
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div>
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div> 
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div>
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div> 
+                             <div><input type="checkbox" name="cuisine" id="Afgan">
+                             <label for="afgan">afghan</label></div>
+                              </div>
+                             </div>
+
+                             <div id="filtering-2">
+                                         <div><input type="radio" name="rating" id="one" checked>
+                                         <label for="one">Any</label>
+                                         </div>
+                                         <div><input type="radio" name="rating" id="two">
+                                         <label for="two">3.5</label>
+                                         </div>
+                                         <div><input type="radio" name="rating" id="three">
+                                         <label for="three">4.0</label>
+                                         </div>
+                                         <div><input type="radio" name="rating" id="four">
+                                         <label for="four">4.5</label>
+                                         </div>
+                                         <div><input type="radio" name="rating" id="five">
+                                         <label for="five">5.0</label>
+                                         </div>
+                             </div>
+                             <div id="filtering-3">
+                                 <input type="range" name="meter" id="meter" max="50">
+                             </div>
+                             <div id="filtering-4">
+                                 <div>
+                                     <input type="radio" name="more" id="veg">
+                                     <label for="veg">pure Veg</label>
+                                 </div>
+                                 <div>
+                                     <input type="radio" name="more" id="non-veg">
+                                     <label for="non-veg">non Veg</label>
+                                 </div>
+                             </div>
+                 </div>
+                 <div id="form-btn">
+                     <button  onclick="checkvalue()" type="reset" >clear all</button>
+                     <button type="submit" class="apply-now">Apply</button>
+                 </div>
+             </form>
+         </div>
+         <div class="filter4 f-content" onclick="filter(1)"><span class="filtering" id="filter-btn-1">Cuisines</span ></div>
+         <div class="filter5 f-content"onclick="filter(2)"><span class="filtering" id="filter-btn-2" >Rating</span ></div>
+         <div class="filter6 f-content"onclick="filter(3)"><span class="filtering" id="filter-btn-3"  >Cost per person</span ></div>
+         <div class="filter7 f-content"onclick="filter(4)"><span class="filtering" id="filter-btn-4" >More Filter</span ></div>
+         <div class="filter8 f-content"></div>
+      </div>
+  </div>
+  <script>
+      let sort= document.getElementById("filtering-0");
+     sort.style.display="block";
+    let Popularity = document.getElementById("Popularity");
+    let RatingHightoLow = document.getElementById("RatingHightoLow");
+    let Deliverytime = document.getElementById("Deliverytime");
+    let CostLowtoHigh = document.getElementById("CostLowtoHigh");
+    let CostHightoLow = document.getElementById("CostHightoLow");
+    var s=document.getElementById("Popularity").value;
+     document.getElementById("sort-feilds").innerHTML="<br>"+s;
+    function checkvalue()
+    {
+     if(Popularity.checked==true)
+     {
+     var s=document.getElementById("Popularity").value;
+     document.getElementById("sort-feilds").innerHTML="<br>"+s;
+    
+     }
+      else if(RatingHightoLow.checked==true)
+     {
+     var s=document.getElementById("RatingHightoLow").value;
+     document.getElementById("sort-feilds").innerHTML="<br>"+s;
+     }
+      else if(Deliverytime.checked==true)
+     {
+     var s=document.getElementById("Deliverytime").value;
+     document.getElementById("sort-feilds").innerHTML="<br>"+s;
+     }
+      else if(CostLowtoHigh.checked==true)
+     {
+     var s=document.getElementById("CostLowtoHigh").value;
+     document.getElementById("sort-feilds").innerHTML="<br>"+s;
+     }
+      else if(CostHightoLow.checked==true)
+     {
+     var s=document.getElementById("CostHightoLow").value;
+     document.getElementById("sort-feilds").innerHTML="<br>"+s;
+     }
+
+    }
+     document.getElementById("filter-btn-0").style.fontWeight="bold";
+     document.getElementById("filter-btn-0").style.textShadow="2px 2px 8px rgba(0, 0, 0, 0.25)";
+      var x;
+      function filter(x){
+         let arr=[0,1,2,3,4];
+         var y=arr.indexOf(x);
+         arr.splice(y,1);
+         console.log(arr);
+         if(x==2||x==3)
+         {
+             document.getElementById("filtering-"+x).style.display="flex";
+             document.getElementById("filter-btn-"+x).style.fontWeight="bold";
+             document.getElementById("filter-btn-"+x).style.textShadow="2px 2px 8px rgba(0, 0, 0, 0.25)";
+
+         }
+         else if(x==0||x==1||x==4)
+         {
+             document.getElementById("filtering-"+x).style.display="block";
+             document.getElementById("filter-btn-"+x).style.fontWeight="bold";
+             document.getElementById("filter-btn-"+x).style.textShadow="2px 2px 8px rgba(0, 0, 0, 0.25)";
+         }
+         for (let index = 0; index < arr.length; index++) {
+                  
+             document.getElementById("filtering-"+arr[index]).style.display="none";
+             document.getElementById("filter-btn-"+arr[index]).style.fontWeight="100";
+             document.getElementById("filter-btn-"+arr[index]).style.textShadow="none";
+         }
+         
+      }
+  </script>
+</section>
+</section>
+=======
+</div>
+>>>>>>> efd9df814987eb2afdde7d2a7365d5baba7eb79f
+</body>
+</html>

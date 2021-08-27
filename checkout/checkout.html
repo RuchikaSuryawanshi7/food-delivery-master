@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <style>
+        .justify-content-end{
+	margin-right: 90px;
+}
+.logo{
+	margin-left:100px;
+}
+.topnav .search-container input{
+	border-radius: 30px;
+	border:none;
+	margin-left: 20px;
+	/* background-color: ; */
+}
+.search-container form input[type="search"] {
+outline: none;
+}
+        
+        .shop {
+            font-size: 10px
+        }
+        
+        .space {
+            letter-spacing: 0.8px !important
+        }
+        
+        a:hover {
+            color: rgb(92, 92, 92)
+        }
+        
+        
+        .active-2 {
+            color: rgb(92, 92, 92)
+        }
+        
+        .breadcrumb>li+li:before {
+            content: "" !important
+        }
+        
+        .breadcrumb {
+            padding: 0px;
+            font-size: 10px;
+            color: #aaa !important
+        }
+        
+        
+        a {
+            text-decoration: none !important;
+            color: #aaa
+        }
+        
+        .btn-lg,
+        .form-control-sm:focus,
+        .form-control-sm:active,
+        a:focus,
+        a:active {
+            outline: none !important;
+            box-shadow: none !important
+        }
+        
+        .form-control-sm:focus {
+            border: 1.5px solid #4bb8a9
+        }
+        
+        .btn-group-lg>.btn,
+        .btn-lg {
+            padding: .5rem 0.1rem;
+            font-size: 1rem;
+            border-radius: 0;
+            color: white !important;
+            background-color: #4bb8a9;
+            height: 2.8rem !important;
+            border-radius: 0.2rem !important
+        }
+        
+        .btn-group-lg>.btn:hover,
+        .btn-lg:hover {
+            background-color: #26A69A
+        }
+        
+        .btn-outline-primary {
+            background-color: #fff !;
+            color: #4bb8a9 !important;
+            border-radius: 0.2rem !important;
+            border: 1px solid #4bb8a9
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: #4bb8a9 !important;
+            color: #fff !important;
+            border: 1px solid #4bb8a9
+        }
+        
+        .card-2 {
+            margin-top: 40px !important
+        }
+        
+        .card-header {
+            background-color: #fff;
+            border-bottom: 0px solid #aaaa !important
+        }
+        
+        p {
+            font-size: 13px
+        }
+        
+        .small {
+            font-size: 9px !important
+        }
+        
+        .form-control-sm {
+            height: calc(2.2em + .5rem + 2px);
+            font-size: .875rem;
+            line-height: 1.5;
+            border-radius: 0
+        }
+        
+        .cursor-pointer {
+            cursor: pointer
+        }
+        
+        .boxed {
+            padding: 0px 8px 0 8px;
+            background-color: #4bb8a9;
+            color: white
+        }
+        
+        .boxed-1 {
+            padding: 0px 8px 0 8px;
+            color: black !important;
+            border: 1px solid #aaaa
+        }
+        
+        .bell {
+            opacity: 0.5;
+            cursor: pointer
+        }
+        
+        .input {
+            border: 0;
+            outline: 0;
+            background: transparent;
+            border-bottom: 1px solid rgb(156, 156, 156);
+        }
+        
+        @media (max-width: 767px) {
+            .breadcrumb-item+.breadcrumb-item {
+                padding-left: 0
+            }
+        }
+        
+        p {
+            display: inline;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        li {
+            display: inline-block;
+        }
+        
+        li a,
+        .pagination li a {
+            color: rgba(97, 97, 97, 1);
+            font-weight: 300;
+        }
+        
+        li a:hover {
+            color: rgba(255, 40, 78, 1);
+            text-decoration: none;
+        }
+        /* START FOOTER STYLE*/   
+ul{
+    list-style:none;  
+}
+ li {
+    display: inline-block;
+}
+li a:hover{
+    color: rgba(255, 40, 78, 1); 
+    text-decoration: none;
+}
+li a i:hover{
+    color: rgba(255, 40, 78, 1); 
+    text-decoration: none;
+}
+footer{
+   background: rgb(141, 137, 137);
+   padding-left: 10%;
+}
+footer ul li a{
+    color: rgb(20, 21, 22);
+    
+}
+footer ul li a i{
+    color: white;
+
+}
+.center{
+    padding-left: 35px;;
+}
+.fa1{
+   font-size: 30px;                                                      
+}
+
+footer li a ,footer h1,.footer-links li a i p{
+
+    font-family: Poppins;
+   
+    font-size:1.05rem;
+}
+
+.footer-links li{
+    display: block;
+    margin:0.5rem 0;
+}
+
+@media screen  and (min-width:0px)and (max-width:768px){
+    .footer-icon li{
+        display: inline-block;
+        margin:0.5rem 0;
+    }
+ }
+    </style>
+    <script>
+        let i = 1;
+
+        function search() {
+            i++;
+            if (i % 2 == 0) {
+                document.getElementById("SEARCH").style.display = "block";
+            } else {
+                document.getElementById("SEARCH").style.display = "none";
+            }
+        }
+    </script>
+    <title>cheackout</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light  bg-secondary fixed-top">
+          <a class="navbar-brand" href="#"><div><img src="Vector.svg" alt="loog" class="img-fluid ml-5"></div></i></a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+          </a>
+        
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mx-auto  justify-content-center ">
+             <li class="topnav">
+                <div class="search-container">
+                  <form class=" m-xl-0"> 
+                     <input type="search" class="p-2 ml-2" placeholder="search food" name="search">  
+                  </form>
+                 </div>
+                </li>
+          <li class="nav-item float-left"><a class="navbar-brand ml-3 text-white" href="#"><i class="fa fa-map-marker mr-2 text-white" aria-hidden="true"></i>location</a>
+          </li>
+          <li class="nav-item"><a class="navbar-brand ml-3  text-white" href="#">filters</a>
+          </li>
+          <li class="nav-item"> <a class="navbar-brand  ml-3  text-white" href="#">about us</a>
+          </li>
+        </ul>
+    
+        <ul class="nav justify-content-start navbar">
+          <li class="nav-item"><a class="nav-link mr-4 text-white" href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-item"><a class="nav-link mr-4 text-white" href="#"><i class="fa fa-book" aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-item"><a class="nav-link mr-4 text-white" href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+          </li>
+       </ul>
+      </div>
+    </nav>
+    </div>
+
+  
+
+
+    <div class="container-fluid my-5" >
+        <div class="row justify-content-center ">
+            <div class="col-xl-10">
+                <div>
+                    
+                    <div class="row justify-content-around mt-5">
+                        <div class="col-md-5">
+                            <div class="card border-0">
+
+                                <div class="card-header pb-0">
+                                    <div class="row mt-4">
+                                        <div class="col">
+                                            <p class="text-muted mb-2"><b>CONTACT DETAILS</b></p>
+                                            <hr class="mt-0">
+
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col">
+                                            <div class="form-group">
+
+                                                <!-- First Name -->
+                                                <input type="text" id="FirstName" class="form-control form-control-sm input" placeholder="First Name" />
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group">
+
+                                                <!-- Last Name-->
+                                                <input type="text" id="LastName" class="form-control form-control-sm input" placeholder="Last Name" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Email -->
+                                    <div class="form-group">
+                                        <input type="email" id="Email" class="form-control form-control-sm input" placeholder="Email" />
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="col-sm-6 pr-sm-2">
+
+
+                                            <!-- Phone -->
+                                            <div class="form-group">
+                                                <input type="number" id="Phone" class="form-control form-control-sm input" placeholder="Phone" />
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card-body">
+                                    <div class="row mt-4">
+                                        <div class="col">
+                                            <p class="text-muted mb-2"><b>SHIPPING ADDRESS</b></p>
+                                            <hr class="mt-0">
+                                        </div>
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="col-sm-6 pr-sm-2">
+
+                                            <!-- Country -->
+                                            <div class="form-group">
+                                                <input type="text" id="Country" class="form-control form-control-sm input" placeholder="Country" />
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="col-sm-6 pr-sm-2">
+
+                                            <!-- Pin Code -->
+                                            <div class="form-group">
+                                                <input type="number" id="PinCode" class="form-control form-control-sm input" placeholder="Pin Code" />
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Flat, House No, Appartment -->
+                                    <div class="form-group">
+                                        <input type="text" id="HouseNo" class="form-control form-control-sm input" placeholder="Flat, House No, Appartment" />
+                                    </div>
+
+                                    <!-- Area,Colony,Street-->
+                                    <div class="form-group ">
+                                        <input type="text" id="Area" class="form-control form-control-sm input" placeholder="Area, Colony, Street" />
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col">
+
+                                            <!-- Town/City -->
+                                            <div class="form-group ">
+                                                <input type="text" id="Town/City" class="form-control form-control-sm input" placeholder="Town/City" />
+                                            </div>
+                                        </div>
+                                        <div class="col">
+
+                                            <!-- State -->
+                                            <div class="form-group">
+                                                <input type="text" id="State" class="form-control form-control-sm input" placeholder="State" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row mt-4">
+                                        <div class="col">
+                                            <p class="text-muted mb-2"><b>PAYMENT METHODS</b></p>
+                                            <hr class="mt-0">
+                                        </div>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="Payment" id="Card" value="Card" checked>
+                                        <label class="form-check-label" for="Card">
+                                          Credit/Debit/ATM card
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="Payment" id="NetBanking" value="NetBanking">
+                                        <label class="form-check-label" for="NetBanking">
+                                          Net Banking
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="Payment" id="EMI" value="EMI">
+                                        <label class="form-check-label" for="EMI">
+                                          EMI
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="Payment" id="COD" value="COD">
+                                        <label class="form-check-label" for="COD">
+                                          Pay On Delivery
+                                        </label>
+                                    </div>
+                                    <br/>
+                                    <div class="row mb-md-5">
+                                        <div class="col"> <button type="button" name="" id="" class="btn btn-lg btn-block " style="background-color: rgb(201, 79, 79);">PLACE ORDER</button> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5  ">
+                            <p class="card-text text-muted mt-md-4 mb-2 space">YOUR ORDER </p>
+                            <div class="card border-10" style="background-color: #a74949;color:white;padding: 3%;">
+                                <div class="card-body pt-0">
+
+                                    <div class="row justify-content-between">
+                                        <div class="col-auto col-md-6">
+                                            <div class="media flex-column flex-sm-row"> <img class=" img-fluid " src="food.jpg" width="200" height="200">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="mb-0" style="margin-top: 15px;"><b>Marky (Peppironi Americana)</b><br/><b>$ 8.00 for one</b></br>
+                                            Description</br>Marky (Pepperoni Americana)
+                                                San Marzano tomato sauce, fresh mozzarella, grated parmesan and pepperoni from
+                                                Il Mondo Vecchio</p>
+                                        </div>
+
+                                    </div>
+                                    <hr class="my-2">
+                                    <div class="row ">
+                                        <div class="col">
+                                            <div class="row justify-content-between">
+                                                <div class="col-4">
+                                                    <p class="mb-1">Subtotal</p>
+                                                </div>
+                                                <div class="flex-sm-col col-auto">
+                                                    <p class="mb-1">Rs 2000</p>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-between">
+                                                <div class="col">
+                                                    <p class="mb-1">Discount</p>
+                                                </div>
+                                                <div class="flex-sm-col col-auto">
+                                                    <p class="mb-1">-Rs 500</p>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-between">
+                                                <div class="col">
+                                                    <p class="mb-1">Delivery Charge</p>
+                                                </div>
+                                                <div class="flex-sm-col col-auto">
+                                                    <p class="mb-1">0</p>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-between">
+                                                <div class="col-4">
+
+                                                    <p><br/> <b>Total</b></p>
+                                                </div>
+                                                <div class="flex-sm-col col-auto">
+                                                    <p class="mb-1"><br/> <b>Rs 1500 </b></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="card mt-5" style="border: 0; ">
+                                <div class="header">
+                                    <h4>Customer Reviews</h4>
+                                </div>
+                                <div class="body">
+                                    <ul class="comment-reply list-unstyled">
+                                        <li class="row clearfix mb-2">
+                                            
+                                            <div class="text-box col-md-10 col-8 p-l-0 p-r0">
+                                                <p><b>Gigi Hadid </b></p>
+                                                <span style="color: #f39c12; margin-left: 5%;">
+                                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                                                </span>
+                                                <p></br>Why are there so many tutorials on how to decouple WordPress? how fast and easy it is to get it running (and keep it running!) and its massive ecosystem. </br></p>
+                                                <p>Mar 09 2018</p>                                           
+                                                                                               
+                                            </div>
+                                            <div class="icon-box col-md-2 col-4"><img class="img-fluid img-thumbnail" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Awesome Image"></div>
+                                        </li>
+                                        <li class="row clearfix mb-2">
+                                            
+                                            <div class="text-box col-md-10 col-8 p-l-0 p-r0">
+                                                <p><b>Gigi Hadid </b></p>
+                                                <span style="color: #f39c12; margin-left: 5%;">
+                                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                                                </span>
+                                                <p></br>Why are there so many tutorials on how to decouple WordPress? how fast and easy it is to get it running (and keep it running!) and its massive ecosystem. </br></p>
+                                                <p>Mar 09 2018</p>                                           
+                                                                                               
+                                            </div>
+                                            <div class="icon-box col-md-2 col-4"><img class="img-fluid img-thumbnail" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Awesome Image"></div>
+                                        </li>
+                                        <li class="row clearfix mb-2">
+                                            
+                                            <div class="text-box col-md-10 col-8 p-l-0 p-r0">
+                                                <p><b>Gigi Hadid </b></p>
+                                                <span style="color: #f39c12; margin-left: 5%;">
+                                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                                                </span>
+                                                <p></br>Why are there so many tutorials on how to decouple WordPress? how fast and easy it is to get it running (and keep it running!) and its massive ecosystem. </br></p>
+                                                <p>Mar 09 2018</p>                                           
+                                                                                               
+                                            </div>
+                                            <div class="icon-box col-md-2 col-4"><img class="img-fluid img-thumbnail" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Awesome Image"></div>
+                                        </li>
+                                    </ul>                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <section>
+        <footer class="">
+            <div class="container-fluid ">
+                <div class="row ">
+                    <div class="col-sm">
+                        <ul class="my-4">
+                          <li><a href="#">vegeterian</a></li><br>
+                          <li><a href="#">non-vegeterian</a></li><br>
+                          <li><a href="#">pizzas</a></li><br>
+                          <li><a href="#">burgers</a></li><br>
+                          <li><a href="#">ice-creams</a></li><br>
+                          <li><a href="#">soft-drinks</a></li><br>
+                        </ul>
+                    </div>
+                    <div class="col-sm my-4">
+                       
+                        <ul class="">
+                           <h1 class="center">also flows us on</h1>
+                         <li> <a href="#"><i class="fa fa-twitter mx-2 fa1"></i></a></li>
+                         <li> <a href="#"><i class="fa fa-whatsapp mx-2 fa1"></i></a></li>
+                         <li> <a href="#"><i class="fa fa-facebook-square mx-2 fa1"></i></a></li>
+                         <li> <a href="#"><i class="fa fa-instagram mx-2 fa1"></i></a></li>
+                        
+
+                        </ul>
+                    </div>
+                    <div class="col-sm my-4">
+                        
+                        <ul class="">
+                          <p>free home delivery charges on<br>order above $20.00</p>
+                          <p>healthy and safe</p>
+                          <p>our contact : 9087654321<br>91123456780</p>
+
+                         
+                        </ul>
+                    </div>
+                </div>
+            </div>
+           
+        </footer>
+</section>
+
+</body>
+
+</html>

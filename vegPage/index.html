@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>    
+<head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="css/style.css"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Rose&family=Revalia&family=Roboto&display=swap" rel="stylesheet">
+<style>
+    *{
+    margin : 0;
+    padding : 0;
+}
+
+#section-1{
+    position: relative;
+}
+
+#section-1>.img-div{
+    width: 100%;
+    height: 60vh;
+}
+
+#section-1>div>img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+
+#title-1{
+    position: absolute;
+    top : 30%;
+    left : 30%;
+    font-size: 2vw;
+}
+#title-2{
+    position: absolute;
+    top : 37%;
+    left : 33%;
+    font-size: 2vw;
+}
+#title-3{
+    position: absolute;
+    top : 60%;
+    left : 50%;
+    font-size: 1.5vw;
+}
+
+#section-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#section-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section-6{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#section-2>a>.section-2-items>img{
+    height: 20vw;
+    width: 20vw;
+    margin-top : 2vw;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+#section-4>a>.section-4-items>img{
+    height: 20vw;
+    width: 20vw;
+    margin : 2vw;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+#section-6>a>.section-6-items>img{
+    height: 10vw;
+    width: 20vw;
+    margin : 2vw;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+#section-3{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#section-5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-title{
+    font-size: 1.5vw;
+    margin : 0vw 13vw;
+}
+.section-title-1{
+    font-size: 1.5vw;
+    margin : 0vw 10vw;
+}
+.section-title-2{
+    font-size: 1.5vw;
+    margin : 0vw 10vw;
+}
+.section-title-3{
+    font-size: 1vw;
+    margin : 0vw 13vw;
+}
+.last-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.last-title>span{
+    font-size: 2vw;
+    margin-top: 2vw;
+}
+/* Utility Classes */
+.dark-green{
+    color : darkgreen;
+}
+.light-green{
+    color : lightgreen;
+}
+
+.red-rose{
+    font-family: 'Red Rose', cursive;
+}
+.revalia{
+    font-family: 'Revalia', cursive;
+}
+
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+</style>
+<style>
+.justify-content-end{
+	margin-right: 90px;
+}
+.logo{
+	margin-left:100px;
+}
+.topnav .search-container input{
+	border-radius: 30px;
+	border:none;
+	margin-left: 20px;
+	background-color: white;
+}
+.search-bar{
+    padding : 0.3vw 2vw;
+}
+</style>
+    
+<title>Veg Page</title>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-transparent">
+      <a class="navbar-brand" href="#"><i class="fa fa-star logo text-dark" aria-hidden="true"></i></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto mx-auto ">
+         <div class="topnav">
+            <div class="search-container">
+              <form class="mt-2"> 
+                 <input type="search" class="search-bar" placeholder="Find Food" name="search">  
+               </form>
+             </div>
+        </div>
+      <li class="nav-item"><a class="navbar-brand ml-4 text-dark" href="#"><i class="fa fa-map-marker mr-2 text-dark" aria-hidden="true"></i>location</a>
+      </li>
+      <li class="nav-item"><a class="navbar-brand ml-4 text-dark" href="#">filters</a>
+      </li>
+      <li class="nav-item"> <a class="navbar-brand  ml-4 text-dark" href="#">about us</a>
+      </li>
+    </ul>
+
+    <ul class="nav justify-content-end navbar">
+      <li class="nav-item"><a class="nav-link mr-4 text-dark" href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+      </li>
+      <li class="nav-item"><a class="nav-link mr-4 text-dark" href="#"><i class="fa fa-book" aria-hidden="true"></i></a>
+      </li>
+      <li class="nav-item"><a class="nav-link mr-4 text-dark" href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+      </li>
+   </ul>
+</div>
+  </nav>
+  </div>
+  <section id="section-1">
+    <div class="img-div">
+        <img src="./photos/(9).jpg" alt="">
+    </div>
+    <span id="title-1" class="red-rose light-green">happy</span>
+    <span id="title-2" class="red-rose dark-green">veggie</span>
+    <span id="title-3" class="red-rose">Enjoy your delicious meal</span>
+  </section>
+  <section id="section-2">
+      <a href="#"><div class="section-2-items"><img src="./photos/(1).jpg" alt=""></div></a>
+     <a href="#"><div class="section-2-items"><img src="./photos/(5).jpg" alt=""></div></a>
+     <a href="#"><div class="section-2-items"><img src="./photos/(1).jpg" alt=""></div></a>
+  </section>
+  <section id="section-3">
+    <a href="#"><span class="red-rose section-title text-dark">Breakfast</span></a>
+    <a href="#"><span class="red-rose section-title text-dark">Lunch/Dinner</span></a>
+    <a href="#"><span class="red-rose section-title text-dark">Snacks</span></a>
+  </section>
+  <section id="section-4">
+      <a href="#"><div class="section-4-items"><img src="./photos/(1).jpg" alt=""></div></a>
+     <a href="#"><div class="section-4-items"><img src="./photos/(5).jpg" alt=""></div></a>
+  </section>
+  <section id="section-5">
+    <a href="#"><span class="red-rose section-title-1 text-dark">Cakes</span></a>
+    <a href="#"><span class="red-rose section-title-1 text-dark">Drinks</span></a>
+  </section>
+  <div class="last-title">
+      <span class="red-rose">Today's Special in Pure Veg</span>
+  </div>
+  <section id="section-6">
+      <a href="#"><div class="section-6-items"><img src="./photos/(4).jpg" alt=""></div></a>
+     <a href="#"><div class="section-6-items"><img src="./photos/(3).jpg" alt=""></div></a>
+     <a href="#"><div class="section-6-items"><img src="./photos/(24).jpg" alt=""></div></a>
+  </section>
+  <section id="section-5">
+    <a href="#"><span class="red-rose section-title-2 text-dark">Special Pasta</span></a>
+    <a href="#"><span class="red-rose section-title-2 text-dark">Veggie Sandwich</span></a>
+    <a href="#"><span class="red-rose section-title-2 text-dark">Paneer Masala</span></a>
+  </section>
+  <section id="section-5">
+    <a href="#"><span class="red-rose section-title-3 text-dark">$8.00 for one</span></a>
+    <a href="#"><span class="red-rose section-title-3 text-dark">$8.00 for one</span></a>
+    <a href="#"><span class="red-rose section-title-3 text-dark">$8.00 for one</span></a>
+  </section>
+</body>
+</html>
